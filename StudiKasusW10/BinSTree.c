@@ -38,7 +38,6 @@ void PreOrder (BinTree P){
         PreOrder(P->left);
         PreOrder(P->right);
     }
-    printf("\n");
 }
 
     
@@ -50,7 +49,6 @@ void InOrder (BinTree P){
         printf("%c", P->info);
         InOrder(P->right);
     }
-    printf("\n");
 }
 
 void PostOrder (BinTree P){
@@ -61,7 +59,6 @@ void PostOrder (BinTree P){
         PostOrder(P->right);
         printf("%c", P->info);
     }
-    printf("\n");
 }
 
 void LevelOrder(BinTree P, int maks_level) {
@@ -102,12 +99,12 @@ void PrintTree (BinTree P, int h){
     if(IsEmpty(P)){
         return;
     } else {
-        PrintTree(P->left, h + 4);
+        PrintTree(P->right, h + 4);
         for (int i = 0; i < h; i++){
             printf(" ");
         }
         printf("%c\n", P->info);
-        PrintTree(P->right, h + 4);
+        PrintTree(P->left, h + 4);
     }   
 }
 
