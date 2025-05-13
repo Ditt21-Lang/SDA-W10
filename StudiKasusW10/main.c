@@ -181,7 +181,8 @@ char morse_to_ascii(BinTree t, char morse[])
 {
     BinTree cursor = t;
     
-    for (int i = 0; morse[i] != '\0' && morse[i] != '\n' ; i++)
+    int i;
+    for ( i = 0; morse[i] != '\0' && morse[i] != '\n' ; i++)
     {
         if (morse[i] == '.')
         {
@@ -238,7 +239,8 @@ int main()
     printf("String yang akan dikonversi ke kode morse: ");
     fgets(input, 100, stdin);
 
-    for (int i = 0; input[i] != '\0' && input[i] != '\n'; i++)
+	int i;
+    for ( i = 0; input[i] != '\0' && input[i] != '\n'; i++)
     {
         ascii_to_morse(tree, tolower(input[i]));
         printf(" ");

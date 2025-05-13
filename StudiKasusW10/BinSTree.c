@@ -100,7 +100,8 @@ void PrintTree (BinTree P, int h){
         return;
     } else {
         PrintTree(P->right, h + 4);
-        for (int i = 0; i < h; i++){
+        int i = 0;
+		for (i; i < h; i++){
             printf(" ");
         }
         printf("%c\n", P->info);

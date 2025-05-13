@@ -72,25 +72,30 @@ int main(){
         case 2:
             printf("Seluruh node pada binary tree\n");
             PrintTree(bintree,1);
+            printf("\n");
             break;
         case 3:
             printf("Tree dengan pre order\n");
             PreOrder(bintree);
-            break;
+            printf("\n");
+			break;
         case 4:
             printf("Tree dengan in order\n");
             InOrder(bintree);
-            break;
+            printf("\n");
+			break;
         case 5:
             printf("Tree dengan post order\n");
             PostOrder(bintree);
-            break;
+            printf("\n");
+			break;
         case 6:
             printf("Masukkan berapa level yang ingin diprint: ");
             scanf("%d", &arg_int);
             printf("Tree dengan Level Order\n");
             LevelOrder(bintree, arg_int);
-            break;
+            printf("\n");
+			break;
         case 7:
             printf("Node yang ingin dicari: ");
             scanf(" %c", &arg_char1);
